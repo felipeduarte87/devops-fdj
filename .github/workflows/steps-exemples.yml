@@ -1,17 +1,17 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Martkeplace
+name: steps examples
 
 on:
   push
 
-
-steps:
-- uses: actions/checkout@v2
-- uses: actions/setup-node@v2
-  with:
-    node-version: '14'
-    check-latest: true
-- run: npm install
-- run: npm test
-- run: node –version
+jobs:
+  marketplace:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Example of use of marketplace
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: shows node version configured.
+        run: node --version
