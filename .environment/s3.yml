@@ -5,7 +5,7 @@
   tasks:
     - name: config bucket
       amazon.aws.s3_bucket:
-        name: devops-cyo
+        name: devops-fdj
         state: present
 
     - name: copy files
