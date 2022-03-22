@@ -1,4 +1,4 @@
-name: Ansible Provisioning
+name: Ansible provisioning
 
 on:
   push:
